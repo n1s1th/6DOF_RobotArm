@@ -126,31 +126,10 @@ void setDefaultPosition() {
 //   delay(1000);
 // }
 
-void grabObject() {
-  srituhobby.setPWM(4, 0, 260);
-  srituhobby.setPWM(3, 0, 250);
-  Serial.println("Moved to object position");
-  delay(1000);
-}
 
-void moveToPosition() {
-  srituhobby.setPWM(1, 0, 425);
-  srituhobby.setPWM(2, 0, 375);
-  srituhobby.setPWM(3, 0, 150);
-  srituhobby.setPWM(4, 0, 150);
-  srituhobby.setPWM(5, 0, 600);
-  Serial.println("Moved to drop area");
-  delay(1000);
-}
 
-void dropObject() {
-  srituhobby.setPWM(4, 0, 260);
-  srituhobby.setPWM(3, 0, 250);
-  srituhobby.setPWM(2, 0, 520);
-  delay(500);
-  Serial.println("Object dropped");
-  delay(500);
-}
+
+
 
 void returnToDefault() {
   setDefaultPosition();
